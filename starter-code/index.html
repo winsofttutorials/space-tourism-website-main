@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="leftNav">
+          <img src="./assets/shared/logo.svg" alt="logo" class="logo" />
+        </div>
+        <hr />
+        <div class="navlinks" id="sideMenu">
+          <ul>
+            <li class="nav-links activeLink" onclick="activeTab()">
+              <a href="#">00 Home</a>
+            </li>
+            <li class="nav-links" onclick="activeTab()">
+              <a href="#">01 Destination</a>
+            </li>
+            <li class="nav-links" onclick="activeTab()">
+              <a href="#">02 Crew</a>
+            </li>
+            <li class="nav-links" onclick="activeTab()">
+              <a href="#">03 Technology</a>
+            </li>
+          </ul>
+          <img
+            src="./assets/shared/icon-close.svg"
+            alt="menuIcon"
+            class="menuIcon close"
+            onclick="openMenu()"
+          />
+        </div>
+        <img
+          src="./assets/shared/icon-hamburger.svg"
+          alt="menuIcon"
+          class="menuIcon menubar"
+          onclick="openMenu()"
+        />
+      </nav>
+    </header>
+    So, you want to travel to Space Let’s face it; if you want to go to space,
+    you might as well genuinely go to outer space and not hover kind of on the
+    edge of it. Well sit back, and relax because we’ll give you a truly out of
+    this world experience! Explore
+
+    <script src="script.js"></script>
+  </body>
+</html>
