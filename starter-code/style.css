@@ -208,7 +208,8 @@ nav hr {
   padding: 20px;
 }
 
-.planetImages {
+.planetImages,
+.specialist {
   width: 80%;
   display: none;
 }
@@ -217,8 +218,10 @@ nav hr {
   width: 70%;
 }
 
-.planetImages.activeImages {
+.planetImages.activeImages,
+.specialist.activeImages {
   display: block;
+  transition: 0.5s;
 }
 
 .rowDestination .col2 {
@@ -256,19 +259,66 @@ nav hr {
   width: 50%;
 }
 
-.tab-content {
+.tab-content,
+.info {
   margin-bottom: 30px;
   display: none;
   transition: 0.4s;
 }
 
-.tab-info {
+.tab-info,
+.info {
   font-size: 24px;
   line-height: 36px;
 }
 
 .tab-content.activeTab {
   display: block;
+}
+
+.info.crewInfo {
+  display: block;
+}
+/* --------------------------CREW------------------------- */
+
+#crew {
+  background-image: url(./assets/crew/background-crew-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 100px 10%;
+  color: #fff;
+}
+
+.specialist img {
+  width: 100%;
+}
+
+.crewLink {
+  display: flex;
+  margin: 20px 0;
+}
+
+.crewLink p {
+  font-size: 20px;
+  margin-right: 25px;
+  cursor: pointer;
+  position: relative;
+}
+
+.crewLink p::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.crewLink p.activeCrewLink::after {
+  width: 50%;
 }
 
 @media (max-width: 900px) {
@@ -465,5 +515,11 @@ nav hr {
 
   .tab-info {
     font-size: 18px;
+  }
+
+  /* ---------------CREW------------- */
+
+  .crewLink p {
+    font-size: 14px;
   }
 }

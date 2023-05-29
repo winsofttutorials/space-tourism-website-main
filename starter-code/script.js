@@ -36,3 +36,25 @@ function tabContentSlider(plantimg, tabname) {
   document.getElementById(tabname).classList.add("activeTab");
   document.getElementById(plantimg).classList.add("activeImages");
 }
+
+var crewLinks = document.getElementsByClassName("activeCrewLink");
+var crewTabs = document.getElementsByClassName("info");
+var specialist = document.getElementsByClassName("specialist");
+
+function crewSlider(crewimg, crewname) {
+  for (const crewLink of crewLinks) {
+    crewLink.classList.remove("activeCrewLink");
+  }
+
+  for (const crewTab of crewTabs) {
+    crewTab.classList.remove("crewInfo");
+  }
+
+  for (const specialists of specialist) {
+    specialists.classList.remove("activeImages");
+  }
+
+  event.currentTarget.classList.add("activeCrewLink");
+  document.getElementById(crewname).classList.add("crewInfo");
+  document.getElementById(crewimg).classList.add("activeImages");
+}
