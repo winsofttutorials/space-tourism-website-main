@@ -9,6 +9,7 @@ body {
   background-image: url(./assets/home/background-home-desktop.jpg);
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 /* --------------Nav set up------------- */
@@ -87,6 +88,87 @@ nav hr {
   display: none;
 }
 
+/* -----------------------CONTENT SECTION-------------------- */
+.hero {
+  padding: 0 10%;
+}
+.title {
+  color: #fff;
+  margin-top: 15%;
+  text-transform: uppercase;
+  font-size: 28px;
+  animation: moveUp linear 0.5s;
+}
+
+.title span {
+  display: block;
+  font-size: 125px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  animation: moveUp linear 1s;
+}
+
+.heroText {
+  color: #fff;
+  max-width: 380px;
+  font-size: 16px;
+  animation: moveUp linear 1.5s;
+}
+
+.explore-btn {
+  position: absolute;
+  bottom: 100px;
+  right: 150px;
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 1;
+  animation: moveUp linear 2s;
+  transition: background 0.4s;
+}
+
+.explore-btn span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 180px;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.explore-btn:hover {
+  background: linear-gradient(
+    to left,
+    rgba(245, 225, 205, 0.6),
+    rgba(225, 255, 205, 0.4)
+  );
+}
+
+.explore-btn span a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #545434;
+  font-size: 20px;
+}
+
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 900px) {
   body {
     background-image: url(./assets/home/background-home-tablet.jpg);
@@ -102,6 +184,29 @@ nav hr {
 
   .navlinks ul .nav-links a {
     font-size: 13px;
+  }
+
+  /* --------------CONTENT_SECTION------------------- */
+
+  .title {
+    font-size: 20px;
+  }
+
+  .title span {
+    font-size: 80px;
+  }
+
+  .heroText {
+    color: #fff;
+    max-width: 300px;
+    font-size: 16px;
+  }
+
+  .explore-btn {
+    bottom: 50px;
+    right: 100px;
+    width: 300px;
+    height: 300px;
   }
 }
 
@@ -179,5 +284,12 @@ nav hr {
     width: 70%;
     height: 3px;
     margin: unset;
+  }
+
+  /* CONTENT */
+
+  .explore-btn {
+    position: unset;
+    margin-top: 30px;
   }
 }
