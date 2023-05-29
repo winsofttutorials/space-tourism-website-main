@@ -71,35 +71,46 @@
       <h1 class="destinations"><a href="#">DESTINATION</a></h1>
       <div class="rowDestination">
         <div class="col1">
-          <span class="imagesPhoto activeImages"
+          <span class="planetImages activeImages" id="moonImg"
             ><img src="./assets/destination/image-moon.png" alt="moon"
           /></span>
-          <span class="imagesPhoto"
+
+          <span class="planetImages" id="marsImg"
             ><img src="./assets/destination/image-mars.png" alt="moon"
           /></span>
-          <span class="imagesPhoto"
+          <span class="planetImages" id="europaImg"
             ><img src="./assets/destination/image-europa.png" alt="moon"
           /></span>
-          <span class="imagesPhoto">
-            <img src="./assets/destination/image-titan.png" alt="moon"
+          <span class="planetImages" id="titanImg"
+            ><img src="./assets/destination/image-titan.png" alt="moon"
           /></span>
         </div>
+
         <div class="col2">
           <h1 class="dest-header">01 Pick your destination</h1>
           <div class="tab-links">
             <p
               class="activeTabLinks activeTabLink"
-              onclick="tabContentSlider('moon')"
+              onclick="tabContentSlider('moonImg', 'moon')"
             >
               Moon
             </p>
-            <p class="activeTabLinks" onclick="tabContentSlider('mars')">
+            <p
+              class="activeTabLinks"
+              onclick="tabContentSlider('marsImg','mars')"
+            >
               Mars
             </p>
-            <p class="activeTabLinks" onclick="tabContentSlider('europa')">
+            <p
+              class="activeTabLinks"
+              onclick="tabContentSlider('europaImg', 'europa')"
+            >
               Europa
             </p>
-            <p class="activeTabLinks" onclick="tabContentSlider('titan')">
+            <p
+              class="activeTabLinks"
+              onclick="tabContentSlider('titanImg','titan')"
+            >
               Titan
             </p>
           </div>

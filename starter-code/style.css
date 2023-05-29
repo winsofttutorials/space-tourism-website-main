@@ -201,13 +201,19 @@ nav hr {
 
 .rowDestination .col1 {
   flex-basis: 38%;
+  padding: 20px;
 }
 
-.imagesPhoto {
+.planetImages {
+  width: 80%;
   display: none;
 }
 
-.imagesPhoto.activeImages {
+.planetImages img {
+  width: 70%;
+}
+
+.planetImages.activeImages {
   display: block;
 }
 
