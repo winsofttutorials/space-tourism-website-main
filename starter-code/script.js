@@ -17,7 +17,7 @@ function openMenu() {
 // -----------------Destination tabinfo---------------
 var tabLinks = document.getElementsByClassName("activeTabLinks");
 var tabcontents = document.getElementsByClassName("tab-content");
-var images = document.getElementsByClassName("imagesPhote");
+var images = document.getElementsByClassName("imagesPhoto");
 
 function imagesGallery() {
   for (const image of images) {

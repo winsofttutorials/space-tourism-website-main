@@ -203,11 +203,11 @@ nav hr {
   flex-basis: 38%;
 }
 
-.imagesPhote {
+.imagesPhoto {
   display: none;
 }
 
-.activeImages {
+.imagesPhoto.activeImages {
   display: block;
 }
 
@@ -310,6 +310,7 @@ nav hr {
 @media (max-width: 375px) {
   #home {
     background-image: url(./assets/home/background-home-mobile.jpg);
+    padding: 0;
   }
 
   .menuIcon {
