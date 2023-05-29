@@ -14,57 +14,140 @@
     <title>Frontend Mentor | Space tourism website</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="leftNav">
-          <img src="./assets/shared/logo.svg" alt="logo" class="logo" />
-        </div>
-        <hr />
-        <div class="navlinks" id="sideMenu">
-          <ul>
-            <li class="nav-links activeLink" onclick="activeTab()">
-              <a href="#">00 Home</a>
-            </li>
-            <li class="nav-links" onclick="activeTab()">
-              <a href="#">01 Destination</a>
-            </li>
-            <li class="nav-links" onclick="activeTab()">
-              <a href="#">02 Crew</a>
-            </li>
-            <li class="nav-links" onclick="activeTab()">
-              <a href="#">03 Technology</a>
-            </li>
-          </ul>
+    <section id="home">
+      <header>
+        <nav>
+          <div class="leftNav">
+            <img src="./assets/shared/logo.svg" alt="logo" class="logo" />
+          </div>
+          <hr />
+          <div class="navlinks" id="sideMenu">
+            <ul>
+              <li class="nav-links activeLink" onclick="activeTab()">
+                <a href="#">00 Home</a>
+              </li>
+              <li class="nav-links" onclick="activeTab()">
+                <a href="#">01 Destination</a>
+              </li>
+              <li class="nav-links" onclick="activeTab()">
+                <a href="#">02 Crew</a>
+              </li>
+              <li class="nav-links" onclick="activeTab()">
+                <a href="#">03 Technology</a>
+              </li>
+            </ul>
+            <img
+              src="./assets/shared/icon-close.svg"
+              alt="menuIcon"
+              class="menuIcon close"
+              onclick="openMenu()"
+            />
+          </div>
           <img
-            src="./assets/shared/icon-close.svg"
+            src="./assets/shared/icon-hamburger.svg"
             alt="menuIcon"
-            class="menuIcon close"
+            class="menuIcon menubar"
             onclick="openMenu()"
           />
-        </div>
-        <img
-          src="./assets/shared/icon-hamburger.svg"
-          alt="menuIcon"
-          class="menuIcon menubar"
-          onclick="openMenu()"
-        />
-      </nav>
-    </header>
-    <!-- -----------------Content----------------------->
+        </nav>
+      </header>
+      <!-- -----------------Content----------------------->
 
-    <section class="hero">
-      <p class="title">So, you want to travel to <span>Space</span></p>
-      <p class="heroText">
-        Let’s face it; if you want to go to space, you might as well genuinely
-        go to outer space and not hover kind of on the edge of it. Well sit
-        back, and relax because we’ll give you a truly out of this world
-        experience!
-      </p>
-      <div class="explore-btn">
-        <span><a href="#">Explore</a></span>
-      </div>
+      <section class="hero">
+        <p class="title">So, you want to travel to <span>Space</span></p>
+        <p class="heroText">
+          Let’s face it; if you want to go to space, you might as well genuinely
+          go to outer space and not hover kind of on the edge of it. Well sit
+          back, and relax because we’ll give you a truly out of this world
+          experience!
+        </p>
+        <div class="explore-btn">
+          <span><a href="#">Explore</a></span>
+        </div>
+      </section>
     </section>
 
+    <section id="destination">
+      <h1 class="destinations"><a href="#">DESTINATION</a></h1>
+      <div class="rowDestination">
+        <div class="col1">
+          <img
+            src="./assets/destination/image-moon.png"
+            alt="moon"
+            class="imagesPhote activeImages"
+          />
+          <img
+            src="./assets/destination/image-mars.png"
+            alt="moon"
+            class="imagesPhote"
+          />
+          <img
+            src="./assets/destination/image-europa.png"
+            alt="moon"
+            class="imagesPhote"
+          />
+          <img
+            src="./assets/destination/image-titan.png"
+            alt="moon"
+            class="imagesPhote"
+          />
+        </div>
+        <div class="col2">
+          <h1 class="dest-header">01 Pick your destination</h1>
+          <div class="tab-links">
+            <p
+              class="activeTabLinks activeTabLink"
+              onclick="tabContentSlider('moon')"
+            >
+              Moon
+            </p>
+            <p class="activeTabLinks" onclick="tabContentSlider('mars')">
+              Mars
+            </p>
+            <p class="activeTabLinks" onclick="tabContentSlider('europa')">
+              Europa
+            </p>
+            <p class="activeTabLinks" onclick="tabContentSlider('titan')">
+              Titan
+            </p>
+          </div>
+          <div class="tab-content activeTab" id="moon">
+            <p class="tab-info">
+              Moon See our planet as you’ve never seen it before. A perfect
+              relaxing trip away to help regain perspective and come back
+              refreshed. While you’re there, take in some history by visiting
+              the Luna 2 and Apollo 11 landing sites. Avg. distance 384,400 km
+              Est. travel time 3 days
+            </p>
+          </div>
+          <div class="tab-content" id="mars">
+            <p class="tab-info">
+              Mars Don’t forget to pack your hiking boots. You’ll need them to
+              tackle Olympus Mons, the tallest planetary mountain in our solar
+              system. It’s two and a half times the size of Everest! Avg.
+              distance 225 mil. km Est. travel time 9 months
+            </p>
+          </div>
+          <div class="tab-content" id="europa">
+            <p class="tab-info">
+              Europa The smallest of the four Galilean moons orbiting Jupiter,
+              Europa is a winter lover’s dream. With an icy surface, it’s
+              perfect for a bit of ice skating, curling, hockey, or simple
+              relaxation in your snug wintery cabin. Avg. distance 628 mil. km
+              Est. travel time 3 years
+            </p>
+          </div>
+          <div class="tab-content" id="titan">
+            <p class="tab-info">
+              Titan The only moon known to have a dense atmosphere other than
+              Earth, Titan is a home away from home (just a few hundred degrees
+              colder!). As a bonus, you get striking views of the Rings of
+              Saturn. Avg. distance 1.6 bil. km Est. travel time 7 years
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
